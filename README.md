@@ -1,4 +1,4 @@
-## Start the FastAPI App
+## Start the FastAPI APP
 
 ```commandline
 uvicorn books:app --reload
