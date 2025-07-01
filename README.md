@@ -3,6 +3,11 @@
 ```commandline
 uvicorn books:app --reload
 uvicorn TodoApp.main:app --reload
+
+
+if __name__ == '__main__':
+    uvicorn.run("main:app", host=os.getenv("APP_HOST", "localhost"), port=int(os.getenv("APP_PORT", 5000)),
+                reload=True)
 ```
 
 
